@@ -1,5 +1,6 @@
-@ECHO  OFF
-CD %1
+@echo off
+cd /d %1
+rm error.log
 git add .
-git commit -m "Website updates. (BSS)"
-git push origin master
+git commit -m 'Updated website via BSS'
+git push
